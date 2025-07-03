@@ -24,7 +24,7 @@ public class LessonFive extends Application {
 
        StackPane layout = new StackPane();
        layout.getChildren().add(btn);
-       Scene scene = new Scene(layout);
+       Scene scene = new Scene(layout, 500, 250);
        window.setScene(scene);
        window.show();
 
