@@ -14,6 +14,7 @@ public class LessonFive extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+    //Comentário aleatório
 
     @Override
     public void start(Stage primaryStage) {
