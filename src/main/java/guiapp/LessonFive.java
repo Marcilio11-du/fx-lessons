@@ -11,16 +11,17 @@ public class LessonFive extends Application {
     Stage window;
     Button btn;
 
-    public static void main(String[] args) {
-        launch(args);
-    }
+    public static void main(String[] args) {launch(args);}
     //Comentário aleatório
 
     @Override
     public void start(Stage primaryStage) {
        window = primaryStage;
        btn = new Button("Clicar");
-       btn.setOnAction(e -> System.out.println("O botão foi clicado!"));
+       btn.setOnAction(e -> {
+           System.out.println("O botão foi clicado!");
+           AlertBox.display("Menu","Está a segunda tela!");
+       });
        window.setTitle("Aplicação da aula número 5");
 
        StackPane layout = new StackPane();
@@ -28,7 +29,5 @@ public class LessonFive extends Application {
        Scene scene = new Scene(layout, 500, 250);
        window.setScene(scene);
        window.show();
-
-
     }
 }
