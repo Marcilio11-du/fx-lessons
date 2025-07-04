@@ -19,7 +19,7 @@ public class LessonSeven extends Application {
     @Override
     public void start(Stage primaryStage) {
         stage = primaryStage;
-        stage.setTitle("A forma correcta de fechar uma janela");
+        stage.setTitle("A forma correta de fechar uma janela");
         stage.setOnCloseRequest(e -> {
             e.consume();//O método consume() é usado para "consumir" um evento, indicando que ele não deve ser processado por outros handlers na cadeia de eventos
             boolean res = ConfirmBox.display("Fechar Janela", "Tem a certeza de que pretende fechar o programa");
