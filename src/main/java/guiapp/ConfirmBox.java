@@ -42,7 +42,7 @@ public class ConfirmBox {
         Scene scene = new Scene(layout);
         stage.setTitle(title);
         stage.setScene(scene);
-        stage.show();
+        stage.showAndWait();
         return answer;
     }
 }
