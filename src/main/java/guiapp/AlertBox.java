@@ -20,7 +20,7 @@ public class AlertBox {
 
         StackPane layout = new StackPane();
         layout.getChildren().addAll(label,button);
-        Scene scene = new Scene(layout, 500,250);
+        Scene scene = new Scene(layout, 300,150);
         stage.setTitle(title);
         stage.setScene(scene);
         stage.show();
